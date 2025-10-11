@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restoring Rating Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .rating-options,
+    .recommend-options {
+      margin-top: 10px;
+    }
+
+    .rating-options label,
+    .recommend-options label {
+      font-weight: normal;
+      margin-left: 5px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      margin-top: 25px;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>RESTORING RATING FORM</h2>
+
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label>How would you rate the restoring?</label>
+      <div class="rating-options">
+        <input type="radio" id="excellent" name="rating" value="Excellent">
+        <label for="excellent">Excellent</label><br>
+
+        <input type="radio" id="good" name="rating" value="Good">
+        <label for="good">Good</label><br>
+
+        <input type="radio" id="average" name="rating" value="Average">
+        <label for="average">Average</label><br>
+
+        <input type="radio" id="poor" name="rating" value="Poor">
+        <label for="poor">Poor</label><br>
+
+        <input type="radio" id="verypoor" name="rating" value="Very Poor">
+        <label for="verypoor">Very Poor</label>
+      </div>
+
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="3"></textarea>
+
+      <label>Would you recommend this service?</label>
+      <div class="recommend-options">
+        <input type="radio" id="yes" name="recommend" value="Yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="recommend" value="No">
+        <label for="no">No</label>
+      </div>
+
+      <label for="suggestions">Are there any additional suggestions?</label>
+      <input type="text" id="suggestions" name="suggestions">
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
