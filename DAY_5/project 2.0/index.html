@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TastyBite - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">TastyBite</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Reserve / Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO CAROUSEL -->
+    <div id="hero" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../project 2.0/images/traditional-indian-food-in-flat-lay-photograph-l808i2de2j2bacdi.jpg" class="d-block w-100" alt="Restaurant interior">
+          <div class="carousel-caption bg-dark bg-opacity-50 p-3 rounded-3">
+            <h2>Welcome to TastyBite</h2>
+            <p>Fine dining, warm ambiance, and unforgettable flavors.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../PROJECT---3/images/main2.jpg" class="d-block w-100" alt="Food table">
+          <div class="carousel-caption bg-dark bg-opacity-50 p-3 rounded-3">
+            <h2>Fresh Ingredients</h2>
+            <p>Locally sourced, globally inspired.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../PROJECT---3/images/main3.jpeg" class="d-block w-100"  alt="Chef cooking">
+          <div class="carousel-caption bg-dark bg-opacity-50 p-3 rounded-3">
+            <h2>Crafted by Experts</h2>
+            <p>Our chefs put passion in every plate.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h2>About TastyBite</h2>
+          <p>We're passionate about food that brings people together. From sizzling grills to creamy desserts, every dish is prepared with care and creativity.</p>
+          <ul class="list-group mb-3">
+            <li class="list-group-item">Authentic Recipes</li>
+            <li class="list-group-item">Elegant Ambience</li>
+            <li class="list-group-item">Chef-Curated Menus</li>
+          </ul>
+        </div>
+        <div class="col-lg-5">
+          <div class="ratio ratio-16x9 rounded-3 shadow-sm">
+  <iframe 
+    src="https://www.youtube.com/embed/GWaQiFeQ87g?autoplay=1&mute=1&loop=1&playlist=GWaQiFeQ87g" 
+    title="TastyBite Promo" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED DISHES -->
+    <section class="container mb-5">
+      <h3 class="mb-3">Featured Dishes</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=60" class="card-img-top">
+            <div class="card-body text-center">
+              <h5>Grilled Steak</h5><p>Served with garlic butter sauce.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../PROJECT---3/images/plate-fettuccine-alfredo-with-fresh-parsley_9975-124881.jpg" class="card-img-top">
+            <div class="card-body text-center">
+              <h5>Alfredo Pasta</h5><p>Creamy, rich and freshly made.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="../PROJECT---3/images/choco cake.jpg" class="card-img-top">
+            <div class="card-body text-center">
+              <h5>Chocolate Lava Cake</h5><p>Decadent molten chocolate center.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIST + CTA -->
+    <section class="container mb-5">
+      <div class="row">
+        <div class="col-md-8">
+          <h4>Top Reasons to Travel</h4>
+          <ol>
+            <li>Disconnect & recharge</li>
+            <li>Try new cuisines</li>
+            <li>Meet new people</li>
+          </ol>
+        </div>
+        <div class="col-md-4 text-end">
+          <a href="menu.html" class="btn btn-lg btn-success"
+            >See Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light text-center py-3">
+      © <span id="year"></span> TastyBite — Where Taste Lives
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  </body>
+</html>
